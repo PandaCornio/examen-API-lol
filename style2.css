@@ -1,0 +1,11 @@
+#bkimage {
+    height:85vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.title{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+}
