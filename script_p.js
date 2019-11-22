@@ -13,7 +13,15 @@ $.ajax({
             $("#title").html(value.title);
             $('#bkimage').css("background-image", "url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/"+value.id+"_0.jpg)");
             $("#historia").html(value.lore);
+            
+            for(i = 1; i< value.skins.length; i++){
+                fill_data += "<li>"+value.skins[i].name+"</li>";
+            }
+
+            $("#fill-f").html(fill_data);
         });
+
+
     },
     error: function(e){
         console.log(e.message);
